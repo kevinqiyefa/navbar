@@ -1,7 +1,8 @@
 document.getElementById('menu-icon').addEventListener('click', displayItems);
 
 function displayItems() {
-  let cssDisplay = document.getElementById('nav-items').style.display;
-  document.getElementById('nav-items').style.display =
-    cssDisplay === 'flex' ? 'none' : 'flex';
+  let cssDisplay = document.getElementsByClassName('nav-items')[0].style
+    .display;
+  document.getElementsByClassName('nav-items')[0].style.display =
+    cssDisplay === 'flex' ? '' : 'flex';
 }
